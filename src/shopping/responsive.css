@@ -1,0 +1,28 @@
+@media screen and (max-width:900px) {
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item{
+        padding: 3.5vh;
+    }
+
+    .search {
+        padding-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search input{
+        width: 40vw;
+    }
+    .imgs img{
+        height: 20vh;
+        margin-top: 20vh;
+    }
+    .container{
+        height: 40vh;
+    }
+}

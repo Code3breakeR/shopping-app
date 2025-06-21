@@ -1,0 +1,118 @@
+.login {
+    position: fixed;
+    top: 15vh;
+    left: 10vw;
+    right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: aqua;
+}
+
+h2 {
+    margin-bottom: 2vh;
+}
+
+.form {
+    position: relative;
+    padding: 3vh 3vw;
+    background-color: #1c1c1c;
+    height: 50vh;
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray,
+        0 0 20px gray,
+        0 0 40px gray,
+        0 0 60px gray,
+        0 0 80px gray,
+        0 0 100px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border-radius: inset 5px solid black; */
+}
+
+.form::before {
+    content: '';
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    background-color: aqua;
+    animation: anima 3s linear infinite;
+}
+
+.form::after {
+    content: '';
+    position: absolute;
+    background-color: #23242a;
+    inset: 5px;
+    border-radius: inset 5px;
+}
+
+@keyframes anima {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.details {
+    height: 10vh;
+    width: 28vw;
+    z-index: 2;
+}
+
+.details input {
+    width: 100%;
+    height: 0vh;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.details input:focus {
+    height: 5vh;
+}
+
+h2,
+.links {
+    z-index: 2;
+}
+
+.links a {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0;
+    z-index: 10;
+    color: aqua;
+}
+
+button {
+    width: 20vw;
+    height: 5vh;
+    z-index: 2;
+    background-color: aqua;
+}
+
+.close {
+    position: relative;
+    width: 2vw;
+    height: 2vh;
+    top: -65px;
+    left: 195px;
+    /* z-index: 2; */
+}
+@media screen and (max-width:900px) {
+    .form {
+        position: relative;
+        width: 60vw;;
+    }
+}

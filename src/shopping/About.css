@@ -1,0 +1,18 @@
+.photos{
+    margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.photos div img{
+    width: 500px;
+    height: 500px;
+}
+.photos div p{
+    width: 500px;
+    height: 500px;
+    word-spacing: 10px;
+}

@@ -1,0 +1,35 @@
+.fashion {
+    position: fixed;
+    top: 10.2vh;
+    left: 15vw;
+    width: 15vw;
+    height: 51vh;
+    border: 1px solid gray;
+    box-shadow: 0 0 2px gray,
+        0 0 4px gray,
+        0 0 6px gray,
+        0 0 8px gray,
+        0 0 10px gray;
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    background-color: white;
+}
+
+.fashion span {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.fashion span:hover {
+    color: blue;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:900px) {
+    .fashion {
+        position: fixed;
+        top: 25vh;
+    }
+}
