@@ -37,6 +37,7 @@ function App() {
       <BrowserRouter>
         <Navbar setTrigger={setPopup} search={search} showSearch={showSearch} setFashion={setFashion} active={active} clickHandler={clickHandler} showFashion={showFashion} showFashionn={showFashionn} />
         <Routes>
+          <Route path='/' element={<Shop />}></Route>
           <Route path='/home' element={<Shop />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
